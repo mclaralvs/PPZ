@@ -1,0 +1,109 @@
+Lista 1 - PPZ
+Aluna: Maria Clara Alves de Faria
+Curso: DSM - 1° Semestre
+
+1)
+
+num1 = int (input ("Digite um número :"))
+
+num2 = int (input ("Digite mais um número: "))
+
+print (f"A soma entre {num1} e {num2} é igual à {num1+num2}")
+
+
+
+2)
+
+mt = float (input("Digite um valor em metros: "))
+
+print(f"{mt} metros é igual à {mt*1000: .2f} milímetros")
+
+
+
+3)
+
+d = int(input("Insira a quantidade de dias: "))
+
+h = int(input("Insira a quantidade de horas: "))
+
+m = int(input("Insira a quantidade de minutos: "))
+
+s = int(input("Insira a quantidade de segundos: "))
+
+print(f"O total convertido em segundos é igual à {d*24*60*60 + h*60*60 + m*60 + s}")
+
+
+
+4)
+
+sal = float(input("Insira o valor do seu salário: "))
+
+porcen = float(input("Insira a porcentagem de aumento: "))
+
+porcen = 1 + (porcen / 100)
+
+print(f"O valor do salário após o aumento salarial é igual à R${sal * porcen: .2f}")
+
+
+5)
+
+preço = float (input("Insira o valor do produto: "))
+
+percen = float (input("Insira o percentual de desconto do produto: "))
+
+print (f"O valor do desconto é de R${preço * (percen/100): .2f} e o preço final é R${preço - (preço * (percen/100): .2f)}")
+
+
+6)
+
+d = int(input("Insira, em quilômetros, a distância a ser percorrida: "))
+
+v = int(input("Insira, em quilômetros por hora, a velocidade média esperada: "))
+
+print(f"O tempo de viagem estimado é de {d/v} horas")
+
+
+
+7)
+
+c = float(input("Insira o valor em Celsius a ser convertido: "))
+
+print(f"{c}°C é igual à {9*c/5 + 32: .1f}°F")
+
+
+
+8)
+
+f = float(input("Insira o valor em Fahreinheit a ser convertido: "))
+
+print(f"{f}°F é igual à {(f - 32) / 1.8: .1f}°C")
+
+
+
+9)
+
+kmp = int(input("Insira a quantidade de quilômetros percorridos: "))
+
+d = int(input("Insira a quantidade de dias de aluguel do carro: "))
+
+print(f"O valor a ser pago é de R${(d*60) + (0.15*kmp): .2f}")
+
+
+
+10)
+
+qntdia = int(input("Insira quantos cigarros você fuma por dia: "))
+
+qntano = int(input("Insira há quantos anos você fuma: "))
+
+totcig = qntano * 365 * qntdia
+
+perd = totcig / 144
+
+print(f"Sua vida foi reduzida em {perd: .1f} dias")
+
+
+
+11)
+
+print(f"2 elevado à 1 milhão é composto por {len( str(2**1000000))} dígitos")
