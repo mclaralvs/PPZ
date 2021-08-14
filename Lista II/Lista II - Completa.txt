@@ -1,0 +1,97 @@
+Lista 1 - PPZ
+Aluna: Maria Clara Alves de Faria
+Curso: DSM - 1° Semestre
+
+1)
+
+lado1 = float(input("Indique o primeiro lado do triângulo: "))
+lado2 = float(input("Indique o segundo lado do triângulo: "))
+lado3 = float(input("Indique o terceiro lado do triângulo: "))
+
+if (lado1 + lado2 > lado3) and (lado1 + lado3 > lado2) and (lado2 + lado3 > lado1):
+    print("É um triângulo.")
+    if (lado1 == lado2) and (lado1 == lado3):
+        print("Esse triângulo é equilátero.")
+    elif (lado1 == lado2) or (lado2 == lado3) or (lado1 == lado3):
+        print("Esse trângulo é isósceles.")
+    else:
+        print("Esse triângulo é escaleno.")
+else:
+    print("Não é um triângulo.")
+
+
+2)
+
+ano = int(input("Insira um ano: "))
+
+if (ano % 4 == 0) and (ano % 100 != 0) or (ano % 400 == 0):
+    print("Esse ano é bissexto.")
+else:
+    print("Esse ano não é bissexto.")
+
+
+3)
+
+peso = float(input("Insira o peso do peixe em Kg: "))
+
+if(peso > 50):
+    exc = peso - 50
+    multa = exc * 4
+    print(f'Há um excesso de {exc: .1f} Kg e há uma multa de R${multa: .2f}')
+else:
+    exc = 0
+    multa = 0
+    print(f'Excesso: {exc: .1f} Kg \nMulta: R${multa: .2f}')
+
+
+4)
+
+num1 = float(input("Insira o primeiro número: "))
+num2 = float(input("Insira o segundo número: "))
+num3 = float(input("Insira o terceiro número: "))
+
+print(f'O maior número entre esses é {max(num1, num2, num3)}')
+
+
+5)
+
+num1 = float(input("Insira o primeiro número: "))
+num2 = float(input("Insira o segundo número: "))
+num3 = float(input("Insira o terceiro número: "))
+
+print(f'O maior número entre esses é {max(num1, num2, num3)}. \nE o menor é {min(num1, num2, num3)}.')
+
+
+6)
+
+salhora = float(input('Insira quanto você ganha por hora: '))
+horasmes = int(input('Insira o número de horas trabalhadas no mês: '))
+
+salbruto = salhora * horasmes
+ir = salbruto * 0.11
+inss = salbruto * 0.08
+sind = salbruto * 0.05
+salliquido = salbruto - (ir + inss + sind)
+
+print('\nSegue os respectivos valores')
+print(f'\nSalário bruto: R${salbruto: .2f}')
+print(f'\nIR: R${ir:.2f}')
+print(f'\nINSS: R${inss: .2f}')
+print(f'\nSindicato: R${sind: .2f}')
+print(f'\nSalário líquido: R${salliquido: .2f}')
+
+
+7)
+
+area = float(input('Indique o tamanho, em metros quadrados, da área a ser pintada: '))
+
+cobertura = area / 3
+lata = 18
+preçolata = 80
+
+if(cobertura <= lata):
+    print(f'A quantidade de latas de tinta a serem compradas é igual à 1 e o preço total é R${preçolata}')
+else:
+    qntlata = cobertura / lata
+    preçotot = round(qntlata+0.5) * preçolata
+    print(f'\nA quantidade de latas de tinta a serem compradas é igual à {round(qntlata+0.5)} e o preço total é R${preçotot}')
