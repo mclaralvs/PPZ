@@ -4,7 +4,7 @@ cobertura = area / 3
 lata = 18
 preçolata = 80
 
-if(cobertura <= lata):
+if cobertura <= lata:
     print(f'A quantidade de latas de tinta a serem compradas é igual à 1 e o preço total é R${preçolata}')
 else:
     qntlata = cobertura / lata
