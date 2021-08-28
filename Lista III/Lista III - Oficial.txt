@@ -1,0 +1,76 @@
+Lista 1 - PPZ
+Aluna: Maria Clara Alves de Faria
+Curso: DSM - 1° Semestre
+
+1)
+
+nota = float(input('Insira uma nota entre 0 e 10: '))
+
+while nota>10 or nota<0:
+    nota = float(input('Valor inválido! Insira novamente: '))
+else:
+    print(f'Valor válido! Nota: {nota: .2f}')
+
+
+2)
+
+user = str(input('Insira seu nome de usuário: '))
+senha = str(input('Insira sua senha: '))
+
+while user == senha:
+    print('Usuário e/ou senha inválidos. Insira seus dados novamente.')
+    user = str(input('Nome de usuário: '))
+    senha = str(input('Senha: '))
+
+print('Usuário e senha corretos! Pode entrar!')
+
+
+3)
+
+a = 80000
+b = 200000
+x = 0
+
+while b>a:
+    a = a * 1.03
+    b = b * 1.015
+    x = x  + 1
+
+print(f'São necessários {x} anos até que a população do país A ultrapasse ou iguale-se a população do país B.')
+
+
+4)
+
+num = int(input('Insira um número: '))
+
+a, b = 1, 1
+cont = 1
+
+while cont <= num-2:
+    a, b = b, a+b
+    cont = cont+1
+else:
+    print(b)
+
+5)
+
+x = int(input('Insira um número: '))
+y = int(input('Insira outro número: '))
+
+r = 0
+if x >= y:
+    if x % y == 0:
+            print(f'MDC: {y}')
+    else:
+        while x % y != 0:
+            x, y = y, x % y
+
+        print(f'MDC: {y}')
+else:
+    if y % x == 0:
+            print(f'MDC: {x}')
+    else:
+        while y % x != 0:
+            y, x = x, y % x
+
+        print(f'MDC: {x}')
