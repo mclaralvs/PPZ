@@ -1,9 +1,10 @@
 num = int(input('Insira um número: '))
 
-x, y = 1, 1
+a, b = 1, 1
 cont = 1
 
-while cont <= num - 2:
-    x, y = y, x + y
-    cont = cont + 1   
-print(y) 
+while cont <= num-2: #n-2 pq eh a posição do número que está sendo lido
+    a, b = b, a+b
+    cont = cont+1
+else:
+    print(b)
