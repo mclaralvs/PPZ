@@ -1,0 +1,124 @@
+Lista 4 - PPZ
+Aluna: Maria Clara Alves de Faria
+Curso: DSM - 1° Semestre
+
+1)
+
+from random import sample
+
+num = sample(range(100), 10)
+
+count = 1
+min = num[0]
+max = num[0]
+
+while count < 10:
+    if num[count] < min:
+        min = num[count]
+        
+    if num[count] > max:
+        max = num[count]
+        
+    count = count + 1
+
+print(f'Vetor: {num}\nMáximo: {max}\nMínimo: {min}')
+
+
+2)
+
+from random import sample
+
+num = sample(range(100), 20)
+
+par = []
+impar = []
+count = 0
+
+while count < 20:
+    if num[count] % 2 == 0:
+        par.append(num[count])
+    else:
+        impar.append(num[count])
+    count = count + 1
+
+print(f'Vetor: {num}\nPares: {par}\nÍmpares: {impar}')
+
+
+3)
+
+from random import sample
+
+a = sample(range(100), 10)
+b = sample(range(100), 10)
+
+c = []
+k = count = 0
+
+while k < 2: 
+    while count < 10:
+        c.append(a[count])
+        c.append(b[count]) 
+        count = count + 1
+    k = k + 1
+
+print(f'A: {a}\nB: {b}\nC: {c}')
+
+
+4)
+
+text = '''The Python Software Foundation and the global Python 
+community welcome and encourage participation by everyone. Our community is based on 
+mutual respect, tolerance, and encouragement, and we are working to help each other live up 
+to these principles. We want our community to be more diverse: whoever you are, and 
+whatever your background, we welcome you.'''
+
+text = text.lower()
+text = text.replace(',', ' ')
+text = text.replace('.', ' ')
+text = text.replace(':', ' ')
+text = text.split()
+
+x = []
+count = 0
+
+
+while count < len(text):
+    if text[count][0] == 'p' or text[count][0] == 'y' or text[count][0] == 't' or text[count][0] == 'h'or text[count][0] == 'o' or text[count][0] =='n':
+        x.append(text[count])
+    
+    elif text[count][-1] == 'p' or text[count][-1] == 'y' or text[count][-1] == 't' or text[count][-1] == 'h'or text[count][-1] == 'o' or text[count][-1] == 'n':
+        x.append(text[count])
+    count = count + 1
+
+print(f'Lista de palavras que começam ou terminam com uma das letras da palavra Python: {x}')
+print(len(x))
+
+
+5)
+
+text = '''The Python Software Foundation and the global Python 
+community welcome and encourage participation by everyone. Our community is based on 
+mutual respect, tolerance, and encouragement, and we are working to help each other live up 
+to these principles. We want our community to be more diverse: whoever you are, and 
+whatever your background, we welcome you.'''
+
+text = text.lower()
+text = text.replace(',', ' ')
+text = text.replace('.', ' ')
+text = text.replace(':', ' ')
+text = text.split()
+
+def tem_em_python(palavra):
+    for letra in palavra:
+        if letra in 'python':
+            return True
+    return False
+
+v = []
+
+for p in text:
+    if tem_em_python(p) and len(p) > 4:
+        v.append(p)
+
+print(v)
+print(len(v))

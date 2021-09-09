@@ -1,0 +1,32 @@
+while
+-------------------------------------------------
+# usar em situações em que não se sabe a quantidade de dados que deverão ser lidos
+
+for
+------------------------------------------------
+# não precisa declarar variável
+
+exemplo de criação de função
+-------------------------------------------------
+# usamos para dividir o código em pedaços
+## melhor testar a função e depois fazê-lo por inteiro
+## minimiza erros
+
+# fica na memória e pode usar quantas vezes quiser
+
+# não precisa de input: só colocar o valor dentro dos parênteses
+
+# não precisa de print: o return já mostra o resultado
+## print apenas mostra o resultado na tela
+## return guarda o valor
+## posso ter vários returns mas ele para de executar após 1
+
+
+
+#def fat(n):
+    k = 1
+    fat = 1
+    while k <= n:
+        fat = fat * k
+        k = k + 1
+    return fat
