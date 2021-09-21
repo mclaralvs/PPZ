@@ -8,4 +8,3 @@ fim = inicio + 4
 preço = float(texto[inicio:fim])
 if preço < 4.74:
     print (f'Comprar: R$ {preço:.2f}')
-

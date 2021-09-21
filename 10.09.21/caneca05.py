@@ -8,4 +8,3 @@ fim = inicio + 4
 preço = texto[inicio:fim]
 if preço < 4.74:
     print ('Compre pelo valor', preço)
-

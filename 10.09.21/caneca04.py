@@ -7,4 +7,3 @@ inicio = onde + 2
 fim = inicio + 4
 preço = texto[inicio:fim]
 print (preço)
-

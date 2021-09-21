@@ -4,4 +4,3 @@ pagina = urllib.request.urlopen(
 texto = pagina.read().decode('utf8') 
 preço = texto[234:238]
 print (preço)
-

@@ -9,4 +9,3 @@ while preço >= 4.74:
     fim = inicio + 4
     preço = float(texto[inicio:fim])
 print (f'Comprar: R$ {preço:.2f}')
-

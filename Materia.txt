@@ -21,8 +21,6 @@ exemplo de criação de função
 ## return guarda o valor
 ## posso ter vários returns mas ele para de executar após 1
 
-
-
 #def fat(n):
     k = 1
     fat = 1
@@ -30,3 +28,28 @@ exemplo de criação de função
         fat = fat * k
         k = k + 1
     return fat
+
+softwares livres
+-------------------------------------------------
+# Software que respeita a liberdade e senso de comunidade dos usuários
+
+# A liberdade de executar o programa como você desejar, para qualquer propósito (liberdade 0).
+
+# A liberdade de estudar como o programa funciona, e adaptá-lo às suas necessidades (liberdade 1). Para tanto, acesso ao código-fonte é um pré-requisito.
+
+# A liberdade de redistribuir cópias de modo que você possa ajudar outros (liberdade 2).
+
+# A liberdade de distribuir cópias de suas versões modificadas a outros (liberdade 3). Desta forma, você pode dar a toda comunidade a chance de beneficiar de suas mudanças. Para tanto, acesso ao código-fonte é um pré-requisito.
+
+TDD
+-------------------------------------------------
+# Test Driven Development
+
+# Boa prática de programação
+
+# 1 - Diminui a abstração do problema quando você pensa em casos concretos para testar
+
+# 2 - Se você trabalha em equipe, ou o código pe grande, uma alteração pode modificar o que já estava correto 
+
+%s - imprime em texto
+repr(variável) - transforma a variável num texto
