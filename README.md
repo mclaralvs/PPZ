@@ -13,7 +13,7 @@ II | Concluída | :white_check_mark:
 III | Concluída | :white_check_mark:
 IV | Concluída | :white_check_mark:
 V | Concluída | :white_check_mark:
-VI | Em andamento | :black_square_button:
+VI | Completa | :white_check_mark:
 VII | Não iniciada | :black_square_button:
 VIII | Não iniciada | :black_square_button:
 IX | Não iniciada | :black_square_button:
