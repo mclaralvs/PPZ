@@ -7,13 +7,13 @@
 # você pode ficar dormindo quando é feriado ou não é dia semana
 # retorne True ou False conforme você vá dormir ou não
 def dormir(dia_semana, feriado):
-    if feriado:
-        return True
-    if not dia_semana:
-        return True 
-    if dia_semana:
-        return False
-    return
+  #if feriado:
+  #  return True
+  #if not dia_semana:
+  #  return True 
+  #if dia_semana:
+  #  return False
+  return True if feriado or not dia_semana else False
 
 # B. alunos_problema
 # temos dois alunos a e b
@@ -21,11 +21,11 @@ def dormir(dia_semana, feriado):
 # temos problemas quando ambos estão sorrindo ou ambos não estão sorrindo
 # retorne True quando houver problemas
 def alunos_problema(a_sorri, b_sorri):
-    if a_sorri == b_sorri:
-        return True
-    else:
-        return False
-    return 
+  #if a_sorri == b_sorri:
+  #    return True
+  #else:
+  #    return False
+  return True if a_sorri == b_sorri else False
 
 # C. soma_dobro
 # dados dois números inteiros retorna sua soma
@@ -33,13 +33,11 @@ def alunos_problema(a_sorri, b_sorri):
 # soma_dobro(1, 2) -> 3
 # soma_dobro(2, 2) -> 8
 def soma_dobro(a, b):
-    from random import sample
-    num = sample(range(1, 100), 2)
-    if num[0] != num[1]:
-        
-    elif num[0] == num[1]:
-        
-    return
+  #if a == b:
+  #  return (a + b) * 2
+  #else:
+  #  return a + b
+  return (a + b) * 2 if a == b else a + b
 
 # D. diff21
 # dado um inteiro n retorna a diferença absoluta entre n e 21
@@ -48,7 +46,11 @@ def soma_dobro(a, b):
 # diff21(25) -> 8
 # dica: abs(x) retorna o valor absoluto de x
 def diff21(n):
-  return
+  #if n > 21:
+  #  return abs(n - 21) * 2
+  #else:
+  #  return abs(n - 21)
+  return abs(n - 21) * 2 if n > 21 else abs(n - 21)
 
 # E. papagaio
 # temos um papagaio que fala alto
@@ -56,13 +58,24 @@ def diff21(n):
 # temos problemas se o papagaio estiver falando
 # antes da 7 ou depois das 20
 def papagaio(falando, hora):
-  return
+  #if falando == True:
+  #  if hora < 7 or hora > 20:
+  #    return True
+  #  else: 
+  #    return False
+  #else:
+  #  return False
+  return True if falando == True and (hora < 7 or hora > 20) else False
 
 # F. dez
 # dados dois inteiros a e b
 # retorna True se um dos dois é 10 ou a soma é 10
 def dez(a, b):
-  return
+  #if a == 10 or b == 10 or a + b == 10:
+  #  return True
+  #else:
+  #  return False
+  return True if a == 10 or b == 10 or a + b == 10 else False
 
 # G. dista10
 # seja um inteiro n
@@ -72,16 +85,16 @@ def dez(a, b):
 # dista10(90) -> True
 # dista10(89) -> False
 def dista10(n):
-  return
+  return True if abs(n - 100) <= 10 or abs(n - 200) <= 10 else False
 
 # H. apaga
 # seja uma string s e um inteiro n
 # retorna uma nova string sem a posição n
 # apaga('kitten', 1) -> 'ktten'
 # apaga('kitten', 4) -> 'kittn'
-# Dica: usar fatiamento de texto
+# dica: usar fatiamento de texto
 def apaga(s, n):
-  return 
+  return s[:n] + s[n + 1:]
 
 # I. troca
 # seja uma string s
@@ -92,7 +105,7 @@ def apaga(s, n):
 # troca('ab') -> 'ba'
 # Dica: usar fatiamento de texto
 def troca(s):
-  return 
+  return s if len(s) <= 1 else s[-1] + s[1:-1] + s[0]
 
 # Provided simple test() function used in main() to print
 # what each function returns vs. what it's supposed to return.
