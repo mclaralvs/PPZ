@@ -4,4 +4,3 @@ for linha in f:
 f.close()
 ##with open('surf.txt') as f:
 ##    print (f.read())
-    
