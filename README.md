@@ -18,9 +18,8 @@ VI | Concluída | :white_check_mark:
 VII | Concluída | :white_check_mark:
 VIII | Não iniciada | :white_check_mark:
 IX | Não iniciada | :white_check_mark:
-X | Não iniciada | :black_square_button:
+X | Não iniciada | :white_check_mark:
 XI | Não iniciada | :black_square_button:
 XII | Não iniciada | :black_square_button:
 XIII | Não iniciada | :black_square_button:
-XIV | Não iniciada | :black_square_button: 
-XV | Não iniciada | :black_square_button:
+XIV | Não iniciada | :white_check_mark: 
