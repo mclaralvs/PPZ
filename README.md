@@ -19,7 +19,4 @@ VII | Concluída | :white_check_mark:
 VIII | Concluída | :white_check_mark:
 IX | Concluída | :white_check_mark:
 X | Concluída | :white_check_mark:
-XI | Não iniciada | :black_square_button:
-XII | Não iniciada | :black_square_button:
-XIII | Não iniciada | :black_square_button:
 XIV | Concluída | :white_check_mark: 
